@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/3d-fluency/1200/administrator-male--v1.jpg">
+    <link rel="stylesheet" href="masoud.css">
+</head>
+<body>
+    <div class="login" >
+        <h6>
+         سلام من دانشجوی آیولرن هستم و این صفحه تمرین من است<SUB>2</SUB> &#128526 
+        </h6>
+        <h1>
+            Login Page
+        </h1>
+        <h6> Mobile Number </h6>
+        <input id="imobile" type="tel" class="cmobile" maxlength="11">  
+        <br>
+        <button onclick="login()" class="cbutton">
+            Enter
+        </button>
+    </div><br><br><br>
+    <script>
+function login(){
+var mobile = document.getElementById("imobile").value ;
+if (mobile.length !== 11 ){
+alert("شماره موبایل باید 11 رقم باشه دقت کن ");
+erorrBox.style.display ="block"
+return;
+}
+if (mobile.substring(0,2)!='09'){
+    alert("کاربر گرامی لطفا شماره موبایل خود را بصورت صحیح وارد کنید . مثال:09123456789");
+    return;
+}
+alert("ممنون بابت  شمارت ")
+}
+</script>
+</body>
+</html>
